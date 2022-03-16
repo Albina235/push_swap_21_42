@@ -1,24 +1,24 @@
 #include "push_swap.h"
 
-void    error(void)
+void	error(void)
 {
-    write(2, "error\n", 6);
-    exit(EXIT_SUCCESS);
+	write(2, "error\n", 6);
+	exit(EXIT_SUCCESS);
 }
 
 void    free_array(char **arr, int f)
 {
-    int i;
+	int	i;
 
-    i = -1;
-    while (arr[++i])
-        free(arr[i]);
-    free(arr);
-    if (f == -1)
-        error();
+	i = -1;
+	while (arr[++i])
+		free(arr[i]);
+	free(arr);
+	if (f == -1)
+		error();
 }
 
-void    free_stack(t_all *all)
+void	free_stack(t_all *all)
 {
 	t_one	*tmp;
 

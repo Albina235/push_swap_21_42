@@ -1,12 +1,12 @@
 #include "../push_swap.h"
 
-void    bouble_sort(t_all *all, int *sort, int *org, int len)
+void	bouble_sort(t_all *all, int *sort, int *org, int len)
 {
 	int	i;
 	int	j;
 	int	c;
 
-    i = 0;
+	i = 0;
 	while (i < len - 1)
 	{
 		j = len - 2;
@@ -22,5 +22,5 @@ void    bouble_sort(t_all *all, int *sort, int *org, int len)
 		}
 		i++;
 	}
-    create_stack(all, sort, org, len);
+	create_stack(all, sort, org, len);
 }
