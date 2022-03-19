@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   errors.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 12:53:46 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 12:53:48 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	error(void)
@@ -6,7 +18,7 @@ void	error(void)
 	exit(EXIT_SUCCESS);
 }
 
-void    free_array(char **arr, int f)
+void	free_array(char **arr, int f)
 {
 	int	i;
 

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   swap.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 12:49:02 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 12:49:03 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 void	sa(t_all *all, int flag)
@@ -38,7 +50,7 @@ void	sb(t_all *all, int flag)
 		write (1, "sb\n", 3);
 }
 
-void	sss(t_all *all, int flag)
+void	ss(t_all *all, int flag)
 {
 	if (all->len_a > 1 && all->len_b > 1)
 	{

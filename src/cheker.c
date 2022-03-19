@@ -1,32 +1,45 @@
-#include	"push_swap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cheker.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 12:46:46 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 12:46:48 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
 
 static void	get_func(t_all *all, char *line)
 {
 	if (!ft_strncmp(line, "pa", 3))
 		pa(all, 0);
-	else if	(!ft_strncmp(line, "pb", 3))
+	else if (!ft_strncmp(line, "pb", 3))
 		pb(all, 0);
-	else if	(!ft_strncmp(line, "sa", 3))
+	else if (!ft_strncmp(line, "sa", 3))
 		sa(all, 0);
-	else if	(!ft_strncmp(line, "sb", 3))
+	else if (!ft_strncmp(line, "sb", 3))
 		sb(all, 0);
-	else if	(!ft_strncmp(line, "ss", 3))
+	else if (!ft_strncmp(line, "ss", 3))
 		ss(all, 0);
-	else if	(!ft_strncmp(line, "ra", 3))
+	else if (!ft_strncmp(line, "ra", 3))
 		ra(all, 0);
-	else if	(!ft_strncmp(line, "rb", 3))
+	else if (!ft_strncmp(line, "rb", 3))
 		rb(all, 0);
-	else if	(!ft_strncmp(line, "rr", 3))
+	else if (!ft_strncmp(line, "rr", 3))
 		rr(all, 0);
-	else if	(!ft_strncmp(line, "rra", 3))
+	else if (!ft_strncmp(line, "rra", 4))
 		rra(all, 0);
-	else if	(!ft_strncmp(line, "rrb", 3))
+	else if (!ft_strncmp(line, "rrb", 4))
 		rrb(all, 0);
-	else if	(!ft_strncmp(line, "rrr", 3))
+	else if (!ft_strncmp(line, "rrr", 4))
 		rrr(all, 0);
 	else
 		error();
 }
+
 static void	checker(t_all *all)
 {
 	char	*line;
@@ -35,7 +48,7 @@ static void	checker(t_all *all)
 	{
 		line = get_next_line(0);
 		if (!line)
-			break;
+			break ;
 		get_func(all, line);
 		free(line);
 	}
@@ -62,6 +75,7 @@ t_all	*parser(char **argv)
 int	main(int argc, char **argv)
 {
 	t_all	*all;
+
 	if (argc > 1)
 	{
 		all = parser(argv);

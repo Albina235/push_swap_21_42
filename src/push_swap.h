@@ -1,9 +1,21 @@
-#ifndef PUSH_SWAP_H
-#define PUSH_SWAP_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 12:55:52 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 12:55:54 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-#include "../libft/libft.h"
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
+
+# include <stdio.h>
+# include <unistd.h>
+# include "../libft/libft.h"
 
 # define MAX_INT 2147483647
 # define MIN_INT -2147483648
@@ -15,17 +27,17 @@ typedef struct s_struct
 	int				index;
 	int				flag;
 	struct s_struct	*next;
-}   t_one;
+}	t_one;
 
 typedef struct s_all
 {
-	t_one	*a; //stack a
-	t_one	*b; //stack b
+	t_one	*a;
+	t_one	*b;
 	int		min_a;
 	int		min_i;
 	int		max_i;
 	int		median;
-	int		len_a; //длина стека а (количество двусвязных списков)
+	int		len_a;
 	int		len_b;
 }	t_all;
 

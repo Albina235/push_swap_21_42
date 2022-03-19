@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_five_three.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 13:10:58 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 13:10:59 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	sort_three_a(t_all *all)
@@ -19,7 +31,7 @@ void	sort_three_a(t_all *all)
 		sa(all, 1);
 }
 
-int short_path(t_all *all)
+int	short_path(t_all *all)
 {
 	int		i;
 	int		j;
@@ -38,7 +50,7 @@ int short_path(t_all *all)
 	while (++j)
 	{
 		if (tmp->index == all->min_i)
-			break;
+			break ;
 		tmp = tmp->prev;
 	}
 	if (j >= i)

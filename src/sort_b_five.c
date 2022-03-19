@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_b_five.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 13:08:32 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 13:08:34 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	push_down(t_all *all)
@@ -8,9 +20,9 @@ void	push_down(t_all *all)
 
 void	sort_b_three(t_all *all)
 {
-	int m;
-	int n;
-	int p;
+	int	m;
+	int	n;
+	int	p;
 
 	if (all->len_b == 0)
 		return ;
@@ -51,9 +63,9 @@ void	after_math_sorting_three(t_all *all, int flag)
 
 void	sort_b_five(t_all *all)
 {
-	int flag;
-	int min;
-	int i;
+	int	flag;
+	int	min;
+	int	i;
 
 	i = all->len_b;
 	flag = all->a->flag;
@@ -70,5 +82,5 @@ void	sort_b_five(t_all *all)
 			pa(all, 1);
 		i--;
 	}
-	after_math_sorting_three(all,flag);
+	after_math_sorting_three(all, flag);
 }

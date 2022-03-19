@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   median.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 12:54:26 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 12:54:27 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	median_a(t_all *all)
@@ -64,7 +76,7 @@ void	move_a_to_b_first(t_all *all)
 
 	median_a(all);
 	i = all->len_a;
-	while(i-- > 0)
+	while (i-- > 0)
 	{
 		if (all->a->index <= all->median)
 		{
@@ -77,10 +89,10 @@ void	move_a_to_b_first(t_all *all)
 		}
 		else
 		{
-				if (all->len_b == all->max_i - all->median + 1)
-					break ;
-				else
-					ra(all, 1);
+			if (all->len_b == all->max_i - all->median + 1)
+				break ;
+			else
+				ra(all, 1);
 		}
 	}
 	move_down_a(all);

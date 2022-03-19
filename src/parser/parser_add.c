@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parser_add.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evalorie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/19 12:51:30 by evalorie          #+#    #+#             */
+/*   Updated: 2022/03/19 12:51:31 by evalorie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 void	add_to_stack(t_all *all, char **arr)
@@ -19,7 +31,6 @@ void	add_to_stack(t_all *all, char **arr)
 	}
 	bouble_sort(all, sorted, original, all->len_a);
 }
-
 
 void	create_stack(t_all *all, int *sort, int *org, int len)
 {
@@ -61,7 +72,7 @@ t_one	*new_list(int nb, int index)
 
 void	lstadd_back(t_one **a, t_one *new)
 {
-	t_one   *beg;
+	t_one	*beg;
 
 	if (new == NULL)
 		return ;

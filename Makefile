@@ -39,7 +39,7 @@ libft	:
 ${NAME}	:	${OBJ}
 			@echo	"Compilation of ${NAME}"
 			@${CCF} ${OBJ} ${LIB} -o ${NAME}
-			@echo "\n Completed $(NAME)\n"
+			@echo "\nCompleted $(NAME)\n"
 
 %.o	: %.c	${INCLUDE}${HEADER}
 			@${CCF} -c $< -o $@ -I ${INCLUDE}
@@ -54,7 +54,7 @@ clean:
 fclean:		clean
 			@$(MAKE) -C libft/ fclean
 			@$(RM) $(NAME) $(NAME_B)
-			@echo "\tAll files were deleted\n"
+			@echo "All files were deleted\n"
 
 re:			fclean all
-			@echo "\tRemake done\n"
+			@echo "Remake done\n"
